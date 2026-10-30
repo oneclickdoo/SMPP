@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Smpp.Connectors</RootNamespace>
+    <AssemblyName>Smpp.Connectors</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Smpp.Client\Smpp.Client.csproj" />
+    <ProjectReference Include="..\Smpp.Gateway\Smpp.Gateway.csproj" />
+    <ProjectReference Include="..\Smpp.Protocol\Smpp.Protocol.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+</Project>

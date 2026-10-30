@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Smpp.Host</RootNamespace>
+    <AssemblyName>Smpp.Host</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Smpp.Connectors\Smpp.Connectors.csproj" />
+    <ProjectReference Include="..\Smpp.Protocol\Smpp.Protocol.csproj" />
+    <ProjectReference Include="..\Smpp.Gateway\Smpp.Gateway.csproj" />
+    <ProjectReference Include="..\Smpp.Server\Smpp.Server.csproj" />
+    <ProjectReference Include="..\Smpp.Storage\Smpp.Storage.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Smpp.Gateway</RootNamespace>
+    <AssemblyName>Smpp.Gateway</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Smpp.Protocol\Smpp.Protocol.csproj" />
+    <ProjectReference Include="..\Smpp.Storage\Smpp.Storage.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Smpp.Protocol.Tests</RootNamespace>
+    <AssemblyName>Smpp.Protocol.Tests</AssemblyName>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Smpp.Client\Smpp.Client.csproj" />
+    <ProjectReference Include="..\..\src\Smpp.Protocol\Smpp.Protocol.csproj" />
+    <ProjectReference Include="..\..\src\Smpp.Simulator\Smpp.Simulator.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+</Project>
